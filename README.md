@@ -4,7 +4,7 @@ A comprehensive, industry-standard Quality Assurance portfolio project demonstra
 
 ---
 
-## 📌 Project Overview
+## Project Overview
 This repository showcases the complete software quality assurance lifecycle, establishing a structured testing methodology before proceeding to automation engineering. Rather than jumping straight into writing script code, this project follows an authentic QA progression:
 
 ```
@@ -21,14 +21,14 @@ The current milestone focuses on **Phase 1: Test Governance, Documentation, and 
 
 ---
 
-## 🎯 Application Under Test (AUT)
+## Application Under Test (AUT)
 - **Application:** SauceDemo (Swag Labs Storefront)
 - **Target URL:** [https://www.saucedemo.com/](https://www.saucedemo.com/)
 - **Technology Stack:** Single Page Application (React) simulating real-world e-commerce retail workflows.
 
 ---
 
-## 🔍 Testing Scope & Primary Modules
+## Testing Scope & Primary Modules
 Testing covers positive business paths, negative validations, edge cases, and user session continuity across seven (7) primary modules:
 
 1. **Login Module:** Authentication flows for standard and restricted user personas, invalid credential handling, mandatory field validations, error dismissal, and secure session termination (logout).
@@ -41,7 +41,7 @@ Testing covers positive business paths, negative validations, edge cases, and us
 
 ---
 
-## 🛠️ QA Approach & Methodology
+## QA Approach & Methodology
 - **Specification-Based Testing:** All test cases are derived directly from observable requirements documented in [`docs/requirements/Requirements.md`](docs/requirements/Requirements.md).
 - **Equivalence Partitioning & Boundary Value Analysis:** Applied to input fields (authentication inputs, postal code formatting, name fields).
 - **State Transition Testing:** Validating shopping cart state and button toggle behavior as items transition between inventory, cart, overview, and completion states.
@@ -50,7 +50,7 @@ Testing covers positive business paths, negative validations, edge cases, and us
 
 ---
 
-## 📁 Repository Structure
+## Repository Structure
 ```text
 saucedemo-qa-automation/
 │
@@ -113,18 +113,18 @@ saucedemo-qa-automation/
 
 ---
 
-## 📋 Manual Testing & Defect Management Workflow
-1. **Execution:** The tester executes each scenario in [`docs/test-cases/Test_Cases.xlsx`](docs/test-cases/Test_Cases.xlsx) against `https://www.saucedemo.com/`.
+## Manual Testing & Defect Management Workflow
+1. **Execution:** This executes each scenario in [`docs/test-cases/Test_Cases.xlsx`](docs/test-cases/Test_Cases.xlsx) against `https://www.saucedemo.com/`.
 2. **Result Capture:** Once executed, the `Actual Result` is populated and `Status` is transitioned from `Not Executed` to `Pass` or `Fail`.
 3. **Defect Filing:** If an anomaly is identified:
-   - Log the defect details in [`defects/Bug_Report.xlsx`](defects/Bug_Report.xlsx) with severity, priority, environment, and reproduction steps.
+   - We have Logged the defect details in [`defects/Bug_Report.xlsx`](defects/Bug_Report.xlsx) with severity, priority, environment, and reproduction steps.
    - Author a dedicated defect markdown report in `defects/<Module>/BUG-[ID]-[title].md`.
    - Save screenshots/recordings in `screenshots/<Module>/BUG-[ID].png`.
    - Link the `Bug ID` back into `Test_Cases.xlsx` and `RTM.xlsx`.
 
 ---
 
-## 🚀 Roadmap: Future Automation & CI/CD
+## Roadmap: Automation & CI/CD
 - **Phase 2 — Playwright & Pytest Automation Framework:**
   - Implementation of Page Object Model (POM) architecture under `automation/pages/`.
   - Development of robust automated regression suites under `automation/tests/`.
@@ -137,5 +137,5 @@ saucedemo-qa-automation/
 
 ---
 
-## 📄 License
+## License
 This project is open-source and available under the terms of the [MIT License](LICENSE).
